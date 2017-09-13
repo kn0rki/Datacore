@@ -1,0 +1,1 @@
+powershell.exe -nologo -noprofile -noninteractive -executionpolicy bypass "& "".\onShutdown.ps1"""
