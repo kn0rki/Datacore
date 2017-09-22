@@ -4,6 +4,6 @@ Add-Content -Path $logfile -Value (get-date) -NoNewline
 Add-Content -Path $logfile -Value " - DCS Shutdown"
 $connection = Connect-DcsServer localhost
 if($connection){
-    Stop-DcsServer -Server localhost -Connection $connection
+    Stop-DcsServer -Server (hostname)
 }
 Disconnect-DcsServer -Connection $connection
